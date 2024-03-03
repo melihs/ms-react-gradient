@@ -1,3 +1,6 @@
 .idea/
 node_modules/
 .storybook/
+storybook-static/
+dist/
+build-storybook.log
