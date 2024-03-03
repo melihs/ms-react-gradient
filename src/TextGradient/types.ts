@@ -1,8 +1,14 @@
 export interface TextGradientProps {
-  text?: string;
-  type?: string;
-  color1?: string;
-  color2?: string;
+  text: string;
+  type?:
+    | "linear"
+    | "radial"
+    | "elliptical"
+    | "repeat-linear"
+    | "repeat-radial"
+    | "repeat-elliptical";
+  color1: string;
+  color2: string;
   startPosition?: string | number;
   endPosition?: string | number;
   style?: object;

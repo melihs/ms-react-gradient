@@ -4,8 +4,8 @@ import { DefaultStyleProps, TextGradientProps } from "./types";
 const TextGradient = ({
   text,
   type,
-  color1 = "#ffffff",
-  color2 = "#000000",
+  color1,
+  color2,
   startPosition = "0",
   endPosition = "100",
   style,

@@ -1,6 +1,6 @@
 {
   "name": "ms-react-gradient",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "component library that converts any text to the desired gradient colors",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
