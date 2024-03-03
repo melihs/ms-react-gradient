@@ -22,7 +22,7 @@ $ yarn add ms-react-gradient
 ### Usage
 
 ```js
-import TextGradient from 'ms-react-gradient';
+import TextGradient from 'ms-react-gradient/src';
 
 <TextGradient
     text="example text"
