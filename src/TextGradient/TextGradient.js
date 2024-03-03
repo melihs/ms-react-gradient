@@ -16,7 +16,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var TextGradient = function (_a) {
-    var text = _a.text, type = _a.type, color1 = _a.color1, color2 = _a.color2, startPosition = _a.startPosition, _b = _a.endPosition, endPosition = _b === void 0 ? "100" : _b, style = _a.style;
+    var text = _a.text, type = _a.type, color1 = _a.color1, color2 = _a.color2, _b = _a.startPosition, startPosition = _b === void 0 ? "0" : _b, _c = _a.endPosition, endPosition = _c === void 0 ? "100" : _c, style = _a.style;
     var styleByType = function () {
         switch (type) {
             case "linear":
