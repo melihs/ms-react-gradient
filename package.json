@@ -1,15 +1,15 @@
 {
   "name": "ms-react-gradient",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "component library that converts any text to the desired gradient colors",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_5b571a5e25ff20a",
-    "build-lib": "rollup -c"
+    "build": "tsc && rollup -c"
   },
   "keywords": [
     "gradient",
@@ -25,10 +25,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.24.0",
-    "@babel/preset-react": "^7.23.3",
-    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@storybook/addon-essentials": "^7.6.17",
     "@storybook/addon-interactions": "^7.6.17",
     "@storybook/addon-links": "^7.6.17",
@@ -42,14 +40,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^4.12.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-terser": "^7.0.2",
-    "storybook": "^7.6.17"
+    "storybook": "^7.6.17",
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.2.0"
   }
 }
