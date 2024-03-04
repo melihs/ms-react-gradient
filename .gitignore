@@ -3,4 +3,6 @@ node_modules/
 .storybook/
 storybook-static/
 dist/
+src/index.js
+src/.DS_Store
 build-storybook.log
