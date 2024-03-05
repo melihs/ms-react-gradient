@@ -36,60 +36,12 @@ import TextGradient from 'ms-react-gradient/src';
 
 ### Props/Options
 
-<table>
-<tr>
-<td>
-text (required)
-</td>
-<td>
- content
-</td>
-</tr>
-<tr>
-<td>
-type (default: linear)
-</td>
-<td>
- specifies which gradient type the text will be.
-</td>
-</tr>
-<tr>
-<td>
-color1 (required)
-</td>
-<td>
-first color
-</td>
-</tr>
-<tr>
-<td>
-color2 (required)
-</td>
-<td>
-second color
-</td>
-</tr>
-<tr>
-<td>
-startPosition (required)
-</td>
-<td>
-Percent passage of the first color</td>
-</tr>
-<tr>
-<td>
-endPosition
-</td>
-<td>
-Percent passage of the second color
-</td>
-</tr>
-<tr>
-<td>
-style
-</td>
-<td>
-Custom style definition
-</td>
-</tr>
-</table>
+| Name          | Description                                     | Default | type                                                                                               |
+|---------------|-------------------------------------------------|---------|----------------------------------------------------------------------------------------------------|
+| text          | content                                         |         | string                                                                                             |
+| type          | specifies which gradient type the text will be. | linear  | string                                                                                             |
+| color1        | first color                                     | 100     | number                                                                                             |
+| color2        | second color                                    |         | "linear" \| "radial" \| "elliptical" \|  "repeat-linear" \| "repeat-radial" \| "repeat-elliptical" |
+| startPosition | Percent passage of the first color              | 0       | string \| number                                                                                   |
+| endPosition   | Percent passage of the second color             | 100     | string \| number                                                                                   |
+| style         | Custom style definition                         |         | number                                                                                             |

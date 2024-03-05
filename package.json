@@ -1,6 +1,6 @@
 {
   "name": "ms-react-gradient",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "component library that converts any text to the desired gradient colors",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/melihs/ms-react-gradient"
+    "url": "git+https://github.com/melihs/ms-react-gradient.git"
   },
   "homepage": "https://github.com/melihs/ms-react-gradient#readme",
   "bugs": {
