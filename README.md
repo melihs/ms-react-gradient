@@ -39,9 +39,9 @@ import TextGradient from 'ms-react-gradient/src';
 | Name          | Description                                     | Default | type                                                                                               |
 |---------------|-------------------------------------------------|---------|----------------------------------------------------------------------------------------------------|
 | text          | content                                         |         | string                                                                                             |
-| type          | specifies which gradient type the text will be. | linear  | string                                                                                             |
-| color1        | first color                                     | 100     | number                                                                                             |
-| color2        | second color                                    |         | "linear" \| "radial" \| "elliptical" \|  "repeat-linear" \| "repeat-radial" \| "repeat-elliptical" |
+| type          | specifies which gradient type the text will be. | linear  | "linear" \| "radial" \| "elliptical" \|  "repeat-linear" \| "repeat-radial" \| "repeat-elliptical" |                                                                                             |
+| color1        | first color                                     |         | string                                                                                             |
+| color2        | second color                                    |         | string                                                                                             |
 | startPosition | Percent passage of the first color              | 0       | string \| number                                                                                   |
 | endPosition   | Percent passage of the second color             | 100     | string \| number                                                                                   |
 | style         | Custom style definition                         |         | number                                                                                             |
