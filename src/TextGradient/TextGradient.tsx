@@ -1,33 +1,10 @@
 import React from "react";
+import useTextGradient from "../hooks/useTextGradient";
 import { DefaultStyleProps, TextGradientProps } from "./types";
+import "./styles.css";
 
-const TextGradient = ({
-  text,
-  type,
-  color1,
-  color2,
-  startPosition = "0",
-  endPosition = "100",
-  style,
-}: TextGradientProps) => {
-  const styleByType = (): string => {
-    switch (type) {
-      case "linear":
-        return `linear-gradient(${color1} ${startPosition}%, ${color2} ${endPosition}%)`;
-      case "radial":
-        return `radial-gradient(${color1} ${startPosition}%, ${color2} ${endPosition}%)`;
-      case "elliptical":
-        return `radial-gradient(ellipse farthest-side at top right, ${color1} ${startPosition}%, ${color2} ${endPosition}%)`;
-      case "repeat-linear":
-        return `repeating-linear-gradient(to right, ${color1} ${startPosition}%, ${color2} 100%)`;
-      case "repeat-radial":
-        return `repeating-radial-gradient(circle farthest-side at top right,${color1} ${startPosition}%, ${color2} ${endPosition}%)`;
-      case "repeat-elliptical":
-        return `repeating-radial-gradient(ellipse farthest-side at top right, ${color1} ${startPosition}%, ${color2} ${endPosition}%)`;
-      default:
-        return `linear-gradient(${color1} ${startPosition}%, ${color2} ${endPosition}%)`;
-    }
-  };
+const TextGradient = (props: TextGradientProps) => {
+  const { styleByType, classNames } = useTextGradient({ ...props });
 
   const defaultStyle: DefaultStyleProps = {
     backgroundImage: styleByType(),
@@ -35,9 +12,14 @@ const TextGradient = ({
     WebkitTextFillColor: "transparent",
     fontSize: "80px",
     fontWeight: 700,
-    ...style,
+    ...props?.style,
   };
-  return <span style={defaultStyle}>{text}</span>;
+
+  return (
+    <span className={classNames()} style={defaultStyle}>
+      {props?.text}
+    </span>
+  );
 };
 
 export default TextGradient;

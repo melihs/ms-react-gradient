@@ -1,5 +1,6 @@
 export interface TextGradientProps {
   text: string;
+  animation?: "linear" | "ease-in-out" | "ease-in";
   type?:
     | "linear"
     | "radial"

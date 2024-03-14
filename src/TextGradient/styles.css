@@ -1,0 +1,29 @@
+.defaultText {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.linear {
+    animation: shine 3s linear infinite alternate;
+}
+
+.easeInOut {
+    animation: shine 3s ease-in-out infinite alternate;
+}
+
+.easeIn {
+    animation: shine 3s ease-in infinite alternate;
+}
+
+

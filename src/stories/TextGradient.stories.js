@@ -1,84 +1,191 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
+import TextGradient from "../TextGradient/TextGradient";
+
+export default {
+  component: TextGradient,
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.RepeatRadial = exports.RepeatLinear = exports.Elliptical = exports.Radial = exports.Linear = void 0;
-var TextGradient_1 = __importDefault(require("../TextGradient/TextGradient"));
-exports.default = {
-    component: TextGradient_1.default,
+
+export const Linear = {
+  args: {
+    color1: "#121fcf",
+    color2: "#13cf50",
+    startPosition: "0",
+    endPosition: "100",
+    type: "linear",
+    text: "Linear gradient text",
+  },
+  argTypes: {
+    animation: {
+      control: "select",
+      options: ["linear", "ease-in-out", "ease-in"],
+    },
+    type: {
+      control: "select",
+      options: [
+        "linear",
+        "radial",
+        "elliptical",
+        "repeat-linear",
+        "repeat-radial",
+        "repeat-elliptical",
+      ],
+    },
+    color1: { control: "color" },
+    color2: { control: "color" },
+  },
 };
-exports.Linear = {
-    args: {
-        color1: "#121fcf",
-        color2: "#13cf50",
-        startPosition: "0",
-        endPosition: "100",
-        type: "linear",
-        text: "Linear gradient text",
+
+export const Radial = {
+  args: {
+    style: "",
+    color1: "#121fcf",
+    color2: "#13cf50",
+    startPosition: "0",
+    endPosition: "100",
+    type: "radial",
+    text: "Radial gradient text",
+  },
+  argTypes: {
+    animation: {
+      control: "select",
+      options: ["linear", "ease-in-out", "ease-in"],
     },
-    argTypes: {
-        color1: { control: "color" },
-        color2: { control: "color" },
+    type: {
+      control: "select",
+      options: [
+        "linear",
+        "radial",
+        "elliptical",
+        "repeat-linear",
+        "repeat-radial",
+        "repeat-elliptical",
+      ],
     },
+    color1: { control: "color" },
+    color2: { control: "color" },
+  },
 };
-exports.Radial = {
-    args: {
-        style: "",
-        color1: "#121fcf",
-        color2: "#13cf50",
-        startPosition: "0",
-        endPosition: "100",
-        type: "radial",
-        text: "Radial gradient text",
+
+export const Elliptical = {
+  args: {
+    style: "",
+    color1: "#121fcf",
+    color2: "#13cf50",
+    startPosition: "0",
+    endPosition: "100",
+    type: "elliptical",
+    text: "Elliptical gradient text",
+  },
+  argTypes: {
+    animation: {
+      control: "select",
+      options: ["linear", "ease-in-out", "ease-in"],
     },
-    argTypes: {
-        color1: { control: "color" },
-        color2: { control: "color" },
+    type: {
+      control: "select",
+      options: [
+        "linear",
+        "radial",
+        "elliptical",
+        "repeat-linear",
+        "repeat-radial",
+        "repeat-elliptical",
+      ],
     },
+    color1: { control: "color" },
+    color2: { control: "color" },
+  },
 };
-exports.Elliptical = {
-    args: {
-        style: "",
-        color1: "#121fcf",
-        color2: "#13cf50",
-        startPosition: "0",
-        endPosition: "100",
-        type: "elliptical",
-        text: "Elliptical gradient text",
+
+export const RepeatLinear = {
+  args: {
+    style: "",
+    color1: "#121fcf",
+    color2: "#13cf50",
+    startPosition: "0",
+    endPosition: "100",
+    type: "repeat-linear",
+    text: "Repeat linear gradient text",
+  },
+  argTypes: {
+    animation: {
+      control: "select",
+      options: ["linear", "ease-in-out", "ease-in"],
     },
-    argTypes: {
-        color1: { control: "color" },
-        color2: { control: "color" },
+    type: {
+      control: "select",
+      options: [
+        "linear",
+        "radial",
+        "elliptical",
+        "repeat-linear",
+        "repeat-radial",
+        "repeat-elliptical",
+      ],
     },
+    color1: { control: "color" },
+    color2: { control: "color" },
+  },
 };
-exports.RepeatLinear = {
-    args: {
-        style: "",
-        color1: "#121fcf",
-        color2: "#13cf50",
-        startPosition: "0",
-        endPosition: "100",
-        type: "repeat-linear",
-        text: "Repeat linear gradient text",
+
+export const RepeatRadial = {
+  args: {
+    style: "",
+    color1: "#121fcf",
+    color2: "#13cf50",
+    startPosition: "0",
+    endPosition: "100",
+    type: "repeat-radial",
+    text: "Repeat radial gradient text",
+  },
+  argTypes: {
+    animation: {
+      control: "select",
+      options: ["linear", "ease-in-out", "ease-in"],
     },
-    argTypes: {
-        color1: { control: "color" },
-        color2: { control: "color" },
+    type: {
+      control: "select",
+      options: [
+        "linear",
+        "radial",
+        "elliptical",
+        "repeat-linear",
+        "repeat-radial",
+        "repeat-elliptical",
+      ],
     },
+    color1: { control: "color" },
+    color2: { control: "color" },
+  },
 };
-exports.RepeatRadial = {
-    args: {
-        style: "",
-        color1: "#121fcf",
-        color2: "#13cf50",
-        startPosition: "0",
-        endPosition: "100",
-        type: "repeat-radial",
-        text: "Repeat radial gradient text",
+
+export const withAnimation = {
+  args: {
+    style: "",
+    color1: "#121fcf",
+    color2: "#13cf50",
+    startPosition: "0",
+    endPosition: "100",
+    animation: "linear",
+    type: "repeat-radial",
+    text: "Repeat radial gradient text",
+  },
+  argTypes: {
+    animation: {
+      control: "select",
+      options: ["linear", "ease-in-out", "ease-in"],
     },
-    argTypes: {
-        color1: { control: "color" },
-        color2: { control: "color" },
+    type: {
+      control: "select",
+      options: [
+        "linear",
+        "radial",
+        "elliptical",
+        "repeat-linear",
+        "repeat-radial",
+        "repeat-elliptical",
+      ],
     },
+    color1: { control: "color" },
+    color2: { control: "color" },
+  },
 };

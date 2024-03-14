@@ -1,3 +1,4 @@
+import css from "rollup-plugin-import-css";
 import typescript from '@rollup/plugin-typescript';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
@@ -9,8 +10,9 @@ export default {
     sourcemap: true,
   },
   plugins: [
+    css(),
     nodeResolve(),
-    typescript(),
+    typescript({ module: "ESNext" }),
   ],
   external: ['react'],
 };

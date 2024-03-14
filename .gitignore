@@ -6,3 +6,9 @@ dist/
 src/index.js
 src/.DS_Store
 build-storybook.log
+
+*storybook.log
+
+src/TextGradient/*.js
+src/hooks/*.js
+src/*.js

@@ -40,6 +40,7 @@ import TextGradient from 'ms-react-gradient/src';
 |---------------|-------------------------------------------------|---------|----------------------------------------------------------------------------------------------------|
 | text          | content                                         |         | string                                                                                             |
 | type          | specifies which gradient type the text will be. | linear  | "linear" \| "radial" \| "elliptical" \|  "repeat-linear" \| "repeat-radial" \| "repeat-elliptical" |                                                                                             |
+| animation     | brings the animation feature of the text. |   | "linear" \| "ease-in-out" \| "ease-in"                                                              |  
 | color1        | first color                                     |         | string                                                                                             |
 | color2        | second color                                    |         | string                                                                                             |
 | startPosition | Percent passage of the first color              | 0       | string \| number                                                                                   |
