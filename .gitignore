@@ -12,3 +12,5 @@ build-storybook.log
 src/TextGradient/*.js
 src/hooks/*.js
 src/*.js
+
+.DS_Store

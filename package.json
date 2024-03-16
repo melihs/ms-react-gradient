@@ -1,6 +1,6 @@
 {
   "name": "ms-react-gradient",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "component library that converts any text to the desired gradient colors",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -43,7 +43,6 @@
     "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
     "@storybook/blocks": "^8.0.0",
     "@storybook/react": "^8.0.0",
-    "@storybook/react-vite": "^8.0.0",
     "@storybook/react-webpack5": "^8.0.0",
     "@storybook/test": "^8.0.0",
     "chromatic": "^11.0.0",
@@ -56,6 +55,5 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
-  },
-  "packageManager": "yarn@4.1.1"
+  }
 }
