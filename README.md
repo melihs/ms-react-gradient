@@ -17,7 +17,7 @@ $ yarn add ms-react-gradient
 
 ### Demo link
 
-> [storybook](https://65e446d14e4260bdc8726536-iblunfkwul.chromatic.com)
+> [storybook](https://65e446d14e4260bdc8726536-ytqzgbjtvm.chromatic.com)
 
 ### Usage
 
